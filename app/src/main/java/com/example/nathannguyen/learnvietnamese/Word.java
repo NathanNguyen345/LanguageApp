@@ -9,12 +9,20 @@ public class Word  {
     // Variables
     private String engWord;
     private String vietWord;
+    private int imageId = -1;
 
 
-    // Constructor
+    // Constructor w/o img
     public Word(String eng, String viet){
         this.engWord = eng;
         this.vietWord = viet;
+    }
+
+    // Constructor w/ img
+    public Word(String eng, String viet, int source){
+        this.engWord = eng;
+        this.vietWord = viet;
+        this.imageId = source;
     }
 
     /**
@@ -24,16 +32,15 @@ public class Word  {
         return vietWord;
     }
 
-    public void setVietWord(String vietWord) {
-        this.vietWord = vietWord;
-    }
-
     public String getEngWord() {
         return engWord;
     }
 
-    public void setEngWord(String engWord) {
-        this.engWord = engWord;
+    public int getImageId() {
+        return imageId;
     }
 
+    public boolean hasImage(){
+        return imageId != -1;
+    }
 }// end Word class

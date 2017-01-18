@@ -17,16 +17,13 @@ public class ColorActivity extends AppCompatActivity {
         ArrayList<Word> colorList = new ArrayList<Word>();
 
         // Add elements into our array list
-        colorList.add(new Word("Black", "đen"));
-        colorList.add(new Word("Blue", "Xanh"));
-        colorList.add(new Word("Gray", "Xám"));
-        colorList.add(new Word("Green", "Xanh Lá Cây"));
-        colorList.add(new Word("Orange", "Cam"));
-        colorList.add(new Word("Pink", "hồng"));
-        colorList.add(new Word("Purple", "Tím"));
-        colorList.add(new Word("Red", "đỏ"));
-        colorList.add(new Word("White", "Trắng"));
-        colorList.add(new Word("Yellow", "Vàng"));
+        colorList.add(new Word("Black", "đen", R.drawable.color_black));
+        colorList.add(new Word("Brown", "Xanh", R.drawable.color_brown));
+        colorList.add(new Word("Gray", "Xám", R.drawable.color_gray));
+        colorList.add(new Word("Green", "Xanh Lá Cây", R.drawable.color_green));
+        colorList.add(new Word("Red", "đỏ", R.drawable.color_red));
+        colorList.add(new Word("White", "Trắng", R.drawable.color_white));
+        colorList.add(new Word("Yellow", "Vàng", R.drawable.color_dusty_yellow));
 
         // Create a word adapter
         WordAdapter<Word> colorAdapter =

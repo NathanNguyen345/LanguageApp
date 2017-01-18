@@ -18,16 +18,16 @@ public class NumberActivity extends AppCompatActivity {
         ArrayList<Word> wordList = new ArrayList<Word>();
 
         // Adding words into the adaptar
-        wordList.add(new Word("One", "Một"));
-        wordList.add(new Word("Two", "Hai"));
-        wordList.add(new Word("Three", "Ba"));
-        wordList.add(new Word("Four", "Bốn"));
-        wordList.add(new Word("Five", "Năm"));
-        wordList.add(new Word("Six", "Sáu"));
-        wordList.add(new Word("Seven", "Bảy"));
-        wordList.add(new Word("Eight", "Tám"));
-        wordList.add(new Word("Nine", "Chín"));
-        wordList.add(new Word("Ten", "Mười"));
+        wordList.add(new Word("One", "Một", R.drawable.number_one));
+        wordList.add(new Word("Two", "Hai", R.drawable.number_two));
+        wordList.add(new Word("Three", "Ba", R.drawable.number_three));
+        wordList.add(new Word("Four", "Bốn", R.drawable.number_four));
+        wordList.add(new Word("Five", "Năm", R.drawable.number_five));
+        wordList.add(new Word("Six", "Sáu", R.drawable.number_six));
+        wordList.add(new Word("Seven", "Bảy", R.drawable.number_seven));
+        wordList.add(new Word("Eight", "Tám", R.drawable.number_eight));
+        wordList.add(new Word("Nine", "Chín", R.drawable.number_nine));
+        wordList.add(new Word("Ten", "Mười", R.drawable.number_ten));
 
 
         // Create Array Adapter for List

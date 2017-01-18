@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
@@ -53,6 +54,18 @@ public class WordAdapter<W> extends ArrayAdapter<Word> {
 
         // Now we set it to the current word
         vietText.setText(currentWordView.getVietWord());
+
+        // Get image reference from Word Object
+        ImageView currentImage = (ImageView) myView.findViewById(R.id.listImage);
+
+        if(currentWordView.hasImage()){
+            // Assign the current image to the reference point
+            currentImage.setImageResource(currentWordView.getImageId());
+            currentImage.setVisibility(View.VISIBLE);
+        }
+        else{
+            currentImage.setVisibility(View.GONE);
+        }
 
         return myView;
     }

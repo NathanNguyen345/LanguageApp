@@ -18,16 +18,16 @@ public class FamilyActivity extends AppCompatActivity {
         ArrayList<Word> familyList = new ArrayList<Word>();
 
         // Add elements to the arrayList
-        familyList.add(new Word("Grandfather", "Ông"));
-        familyList.add(new Word("GrandMother", "Bà"));
-        familyList.add(new Word("Father", "Ba"));
-        familyList.add(new Word("Mother", "Má"));
-        familyList.add(new Word("Brother", "Anh"));
-        familyList.add(new Word("Sister", "Chị"));
-        familyList.add(new Word("Uncle", "Chú"));
-        familyList.add(new Word("Aunt", "Cô"));
-        familyList.add(new Word("Daughter", "Con Gái"));
-        familyList.add(new Word("Son", "Con Trai"));
+        familyList.add(new Word("Grandfather", "Ông", R.drawable.family_grandfather));
+        familyList.add(new Word("GrandMother", "Bà", R.drawable.family_grandmother));
+        familyList.add(new Word("Father", "Ba", R.drawable.family_father));
+        familyList.add(new Word("Mother", "Má", R.drawable.family_mother));
+        familyList.add(new Word("Brother", "Anh", R.drawable.family_son));
+        familyList.add(new Word("Sister", "Chị", R.drawable.family_daughter));
+        familyList.add(new Word("Uncle", "Chú", R.drawable.family_older_brother));
+        familyList.add(new Word("Aunt", "Cô", R.drawable.family_older_sister));
+        familyList.add(new Word("Daughter", "Con Gái", R.drawable.family_younger_sister));
+        familyList.add(new Word("Son", "Con Trai", R.drawable.family_younger_brother));
 
         // Create the word adapter
         WordAdapter<Word> familyAdapter = new WordAdapter<Word>(this, familyList);
