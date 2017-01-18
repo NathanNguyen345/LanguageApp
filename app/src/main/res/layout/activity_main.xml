@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.nathannguyen.learnvietnamese.MainActivity">
+
+
+    <LinearLayout
+        android:background="#9E9E9E"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/number"
+            style="@style/itemMenu"
+            android:background="#FF9800"
+            android:text="Numbers"
+            android:onClick="menuList"/>
+
+        <TextView
+            android:id="@+id/family"
+            style="@style/itemMenu"
+            android:background="#4CAF50"
+            android:text="Family Memebers"
+            android:onClick="menuList"/>
+
+        <TextView
+            android:id="@+id/color"
+            style="@style/itemMenu"
+            android:background="#673AB7"
+            android:text="Colors"
+            android:onClick="menuList"/>
+
+        <TextView
+            android:id="@+id/phrase"
+            style="@style/itemMenu"
+            android:background="#00BCD4"
+            android:text="Phrases"
+            android:onClick="menuList"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
