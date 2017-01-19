@@ -15,8 +15,7 @@
         <ImageView
             android:id="@+id/listImage"
             android:layout_width="88dp"
-            android:layout_height="88dp"
-            android:background="#81C784"/>
+            android:layout_height="88dp"/>
 
         <LinearLayout
             android:orientation="vertical"
@@ -27,14 +26,19 @@
                 android:paddingLeft="16dp"
                 android:id="@+id/engTextView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:textStyle="bold"
                 tools:text="one"/>
 
             <TextView
                 android:paddingLeft="16dp"
                 android:id="@+id/vietTextView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="top"
                 tools:text="mot"/>
         </LinearLayout>
 

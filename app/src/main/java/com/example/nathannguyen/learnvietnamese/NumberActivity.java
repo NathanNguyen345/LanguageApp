@@ -32,7 +32,7 @@ public class NumberActivity extends AppCompatActivity {
 
         // Create Array Adapter for List
         WordAdapter<Word> adapter =
-                new WordAdapter<Word>(this, wordList);
+                new WordAdapter<Word>(this, wordList, R.color.numColor);
 
         // Create ListView object
         ListView myListView = (ListView) findViewById(R.id.numberListView);

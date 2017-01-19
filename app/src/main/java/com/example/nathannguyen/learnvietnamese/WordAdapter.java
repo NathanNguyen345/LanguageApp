@@ -3,6 +3,7 @@ package com.example.nathannguyen.learnvietnamese;
 import android.app.Activity;
 import android.graphics.Color;
 import android.support.annotation.NonNull;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,11 +22,13 @@ import java.util.ArrayList;
 
 public class WordAdapter<W> extends ArrayAdapter<Word> {
 
+    private int colorID;
 
     // Custom constructor that initializes the activity and the list. Since we are using a custom
     // adapter, we will pass the middle arguement as 0.
-    public WordAdapter(Activity context, ArrayList<Word> myList){
+    public WordAdapter(Activity context, ArrayList<Word> myList, int color){
         super(context, 0, myList);
+        colorID = color;
     }
 
 
@@ -67,6 +70,9 @@ public class WordAdapter<W> extends ArrayAdapter<Word> {
         else{
             currentImage.setVisibility(View.GONE);
         }
+
+        int color = ContextCompat.getColor(getContext(), colorID);
+        currentImage.setBackgroundColor(color);
 
         return myView;
     }

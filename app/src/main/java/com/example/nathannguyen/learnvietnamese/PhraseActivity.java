@@ -31,7 +31,7 @@ public class PhraseActivity extends AppCompatActivity {
 
         // Create Array Adapter for List
         WordAdapter<Word> adapter =
-                new WordAdapter<Word>(this, phraseList);
+                new WordAdapter<Word>(this, phraseList, R.color.phraseColor);
 
         // Create ListView
         ListView myListView = (ListView) findViewById(R.id.phraseListView);

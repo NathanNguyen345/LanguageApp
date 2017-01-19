@@ -43,12 +43,11 @@
 
 
     <style name="itemMenu">
+        <item name="android:gravity">center</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">#fff</item>
-        <item name="android:textSize">16sp</item>
-        <item name="android:paddingTop">24sp</item>
-        <item name="android:paddingLeft">16sp</item>
-        <item name="android:layout_height">68sp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_height">88sp</item>
         <item name="android:layout_width">match_parent</item>
     </style>
 
