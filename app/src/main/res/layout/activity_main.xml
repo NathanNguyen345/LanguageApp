@@ -4,7 +4,6 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     tools:context="com.example.nathannguyen.learnvietnamese.MainActivity">
 
 
@@ -17,28 +16,28 @@
         <TextView
             android:id="@+id/number"
             style="@style/itemMenu"
-            android:background="#FF9800"
+            android:background="#81C784"
             android:text="Numbers"
             android:onClick="menuList"/>
 
         <TextView
             android:id="@+id/family"
             style="@style/itemMenu"
-            android:background="#4CAF50"
+            android:background="#4DB6AC"
             android:text="Family Memebers"
             android:onClick="menuList"/>
 
         <TextView
             android:id="@+id/color"
             style="@style/itemMenu"
-            android:background="#673AB7"
+            android:background="#4DD0E1"
             android:text="Colors"
             android:onClick="menuList"/>
 
         <TextView
             android:id="@+id/phrase"
             style="@style/itemMenu"
-            android:background="#00BCD4"
+            android:background="#4FC3F7"
             android:text="Phrases"
             android:onClick="menuList"/>
 
