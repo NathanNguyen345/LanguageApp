@@ -1,7 +1,6 @@
 package com.example.nathannguyen.learnvietnamese;
 
 import android.app.Activity;
-import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
@@ -10,8 +9,6 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
@@ -30,7 +27,6 @@ public class WordAdapter<W> extends ArrayAdapter<Word> {
         super(context, 0, myList);
         colorID = color;
     }
-
 
     @NonNull
     @Override

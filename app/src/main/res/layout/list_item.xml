@@ -18,6 +18,7 @@
             android:layout_height="88dp"/>
 
         <LinearLayout
+            android:id="@+id/playId"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="88dp">

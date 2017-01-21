@@ -1,13 +1,18 @@
 package com.example.nathannguyen.learnvietnamese;
 
-import android.support.v7.app.AppCompatActivity;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 
 public class NumberActivity extends AppCompatActivity {
 
+    // create a media player
+    private MediaPlayer mp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,7 +20,7 @@ public class NumberActivity extends AppCompatActivity {
         setContentView(R.layout.number_list_view);
 
         // Create ArrayList of words
-        ArrayList<Word> wordList = new ArrayList<Word>();
+        final ArrayList<Word> wordList = new ArrayList<Word>();
 
         // Adding words into the adaptar
         wordList.add(new Word("One", "Một", R.drawable.number_one));
@@ -39,6 +44,14 @@ public class NumberActivity extends AppCompatActivity {
 
         // Add the Array adapter into the ListView
         myListView.setAdapter(adapter);
+
+        myListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                mp = MediaPlayer.create(NumberActivity.this, R.raw.one);
+                mp.start();
+            }
+        });
 
     }
 
