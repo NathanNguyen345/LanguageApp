@@ -1,12 +1,17 @@
 package com.example.nathannguyen.learnvietnamese;
 
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 
 public class PhraseActivity extends AppCompatActivity {
+
+    private MediaPlayer mp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,19 +19,17 @@ public class PhraseActivity extends AppCompatActivity {
         setContentView(R.layout.phrase_list_view);
 
         // Create ArrayList of words
-        ArrayList<Word> phraseList = new ArrayList<Word>();
+        final ArrayList<Word> phraseList = new ArrayList<Word>();
 
         // Adding words into the adaptar
-        phraseList.add(new Word("Vietnamese", "Tiếng Việt"));
-        phraseList.add(new Word("Hello", "Xin Chào"));
-        phraseList.add(new Word("Good bye", "Tạm Biệt"));
-        phraseList.add(new Word("Yes", "Vâng"));
-        phraseList.add(new Word("No", "Không"));
-        phraseList.add(new Word("Thank you", "Cảm ơn"));
-        phraseList.add(new Word("You're welcome", "Không Có Chi"));
-        phraseList.add(new Word("Sorry", "Xin Lỗi"));
-        phraseList.add(new Word("English", "Tiếng Anh"));
-        phraseList.add(new Word("Please", "Làm ơn"));
+        phraseList.add(new Word("Hello", "Chào anh", R.raw.hello, false));
+        phraseList.add(new Word("How are you?", "Chị khỏe không?", R.raw.howareyou, false));
+        phraseList.add(new Word("I'm fine, thank you", "Tôi khỏe, cảm ơn", R.raw.imfine, false));
+        phraseList.add(new Word("Nice to meet you", "Hân hạnh được biết chị", R.raw.niceto, false));
+        phraseList.add(new Word("Goodbye", "Tạm biệt", R.raw.goodbye, false));
+        phraseList.add(new Word("Do you speak English?", "Anh có nói tiếng Anh không?", R.raw.english, false));
+        phraseList.add(new Word("Yes, I speak English.", "Có, tôi nói tiếng Anh.", R.raw.yesenglish, false));
+        phraseList.add(new Word("No, I don't speak English.", "Không, tôi không nói tiếng Anh.", R.raw.noenglish, false));
 
 
         // Create Array Adapter for List
@@ -38,5 +41,15 @@ public class PhraseActivity extends AppCompatActivity {
 
         // Add the Array adapter into the ListView
         myListView.setAdapter(adapter);
+
+        myListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Word currentWordItem = phraseList.get(position);
+
+                mp = MediaPlayer.create(PhraseActivity.this, currentWordItem.getSoundId());
+                mp.start();
+            }
+        });
     }
 }

@@ -67,6 +67,7 @@ public class WordAdapter<W> extends ArrayAdapter<Word> {
             currentImage.setVisibility(View.GONE);
         }
 
+        // Set background image to match the theme color
         int color = ContextCompat.getColor(getContext(), colorID);
         currentImage.setBackgroundColor(color);
 

@@ -23,16 +23,16 @@ public class NumberActivity extends AppCompatActivity {
         final ArrayList<Word> wordList = new ArrayList<Word>();
 
         // Adding words into the adaptar
-        wordList.add(new Word("One", "Một", R.drawable.number_one));
-        wordList.add(new Word("Two", "Hai", R.drawable.number_two));
-        wordList.add(new Word("Three", "Ba", R.drawable.number_three));
-        wordList.add(new Word("Four", "Bốn", R.drawable.number_four));
-        wordList.add(new Word("Five", "Năm", R.drawable.number_five));
-        wordList.add(new Word("Six", "Sáu", R.drawable.number_six));
-        wordList.add(new Word("Seven", "Bảy", R.drawable.number_seven));
-        wordList.add(new Word("Eight", "Tám", R.drawable.number_eight));
-        wordList.add(new Word("Nine", "Chín", R.drawable.number_nine));
-        wordList.add(new Word("Ten", "Mười", R.drawable.number_ten));
+        wordList.add(new Word("One", "Một", R.drawable.number_one, R.raw.one));
+        wordList.add(new Word("Two", "Hai", R.drawable.number_two, R.raw.two));
+        wordList.add(new Word("Three", "Ba", R.drawable.number_three, R.raw.three));
+        wordList.add(new Word("Four", "Bốn", R.drawable.number_four, R.raw.four));
+        wordList.add(new Word("Five", "Năm", R.drawable.number_five, R.raw.five));
+        wordList.add(new Word("Six", "Sáu", R.drawable.number_six, R.raw.six));
+        wordList.add(new Word("Seven", "Bảy", R.drawable.number_seven, R.raw.seven));
+        wordList.add(new Word("Eight", "Tám", R.drawable.number_eight, R.raw.eight));
+        wordList.add(new Word("Nine", "Chín", R.drawable.number_nine, R.raw.nine));
+        wordList.add(new Word("Ten", "Mười", R.drawable.number_ten, R.raw.ten));
 
 
         // Create Array Adapter for List
@@ -48,7 +48,9 @@ public class NumberActivity extends AppCompatActivity {
         myListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                mp = MediaPlayer.create(NumberActivity.this, R.raw.one);
+                Word currentWordItem = wordList.get(position);
+
+                mp = MediaPlayer.create(NumberActivity.this, currentWordItem.getSoundId());
                 mp.start();
             }
         });
