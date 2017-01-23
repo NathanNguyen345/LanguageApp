@@ -1,8 +1,10 @@
+/********************************************************************************************************
+ * This is the word class that will be holding both English and Vietnamese words.
+ * Created by: Nathan Nguyem
+ * Date: 1/15/17.
+ ********************************************************************************************************/
 package com.example.nathannguyen.learnvietnamese;
 
-/** This is the word class that will be holding both English and Vietnamese words.
- * Created by nathan.nguyen on 1/15/17.
- */
 
 public class Word  {
 

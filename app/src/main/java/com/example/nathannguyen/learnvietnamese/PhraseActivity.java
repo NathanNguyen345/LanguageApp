@@ -1,3 +1,11 @@
+/********************************************************************************************************
+ * This is out phrase screen activty page.  It declares a private media player. Once the page is created,
+ * we call create a custome arrayList of word objects that we pass in information for the family page.
+ * We then set the activity up with ListView adapter.
+ * Created By: Nathan Nguyen
+ * Date: 1/15/17
+ ********************************************************************************************************/
+
 package com.example.nathannguyen.learnvietnamese;
 
 import android.media.MediaPlayer;
@@ -49,7 +57,32 @@ public class PhraseActivity extends AppCompatActivity {
 
                 mp = MediaPlayer.create(PhraseActivity.this, currentWordItem.getSoundId());
                 mp.start();
+
+                // Release the resource after the audio is done playing
+                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.release();
+                    }
+                });
             }
         });
-    }
-}
+
+    }// end onCreate
+
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+
+        // Stop audio playback and release to free memory
+        mp.stop();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+            }
+        });
+    }// end onStop
+
+}// end activity

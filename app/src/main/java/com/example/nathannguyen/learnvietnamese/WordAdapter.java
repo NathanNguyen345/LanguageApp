@@ -1,3 +1,10 @@
+/********************************************************************************************************
+ * This class is a custom class that inherits from the parent ArrayAdapter class. This class will allow
+ * the user to have multiple text views within a
+ * Created by: Nathan Nguyen
+ * Date: 1/15/17.
+ ********************************************************************************************************/
+
 package com.example.nathannguyen.learnvietnamese;
 
 import android.app.Activity;
@@ -11,11 +18,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
-
-/**This class is a custom class that inherits from the parent ArrayAdapter class.
- * This class will allow the user to have multiple text views within a
- * Created by nathan.nguyen on 1/15/17.
- */
 
 public class WordAdapter<W> extends ArrayAdapter<Word> {
 

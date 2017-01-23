@@ -1,3 +1,11 @@
+/********************************************************************************************************
+ * This is out family screen activty page.  It declares a private media player. Once the page is created,
+ * we call create a custome arrayList of word objects that we pass in information for the family page.
+ * We then set the activity up with ListView adapter.
+ * Created By: Nathan Nguyen
+ * Date: 1/15/17
+ ********************************************************************************************************/
+
 package com.example.nathannguyen.learnvietnamese;
 
 import android.media.MediaPlayer;
@@ -6,8 +14,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-
 import java.util.ArrayList;
+
 
 public class FamilyActivity extends AppCompatActivity {
 
@@ -50,7 +58,30 @@ public class FamilyActivity extends AppCompatActivity {
 
                 mp = MediaPlayer.create(FamilyActivity.this, currentWordItem.getSoundId());
                 mp.start();
+
+                // Release the resource after the audio is done playing
+                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.release();
+                    }
+                });
             }
         });
-    }
-}
+    }// end onCreate
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+
+        // Stop audio playback and release to free memory
+        mp.stop();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                mp.release();
+            }
+        });
+    }// end onStop
+
+}// end activty

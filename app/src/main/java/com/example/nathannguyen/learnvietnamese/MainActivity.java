@@ -1,3 +1,9 @@
+/********************************************************************************************************
+ * This is our main activty. This method inflates all the XML needed for the app. This activity also
+ * allows the user to pick which screen to navigate through.
+ * Created By: Nathan Nguyen
+ * Date: 1/15/17
+ *********************************************************************************************************/
 package com.example.nathannguyen.learnvietnamese;
 
 import android.content.Intent;
@@ -13,20 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Another way to modify setOnClickListener
-//        TextView myView = (TextView) findViewById(R.id.number);
-//
-//        myView.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent i = new Intent(MainActivity.this, NumberActivity.class);
-//                startActivity(i);
-//            }
-//        });
-
-
-
-    }
+    } // end onCreate
 
     /**
      * This method will decide which activity screen will be opem
@@ -53,4 +46,6 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
 
     }// end menuList method
-}
+
+}// end activity
+
