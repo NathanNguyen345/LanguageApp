@@ -8,6 +8,8 @@
 
 package com.example.nathannguyen.learnvietnamese;
 
+import android.content.Context;
+import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -17,10 +19,34 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+import static android.media.AudioManager.AUDIOFOCUS_LOSS_TRANSIENT;
+import static android.media.AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK;
+
 public class NumberActivity extends AppCompatActivity {
 
     // create a media player
     private MediaPlayer mp;
+    private AudioManager am;
+    AudioManager.OnAudioFocusChangeListener amChangeListener =
+            new AudioManager.OnAudioFocusChangeListener() {
+                public void onAudioFocusChange(int focusChange) {
+                    if (focusChange == AudioManager.AUDIOFOCUS_LOSS ||
+                            focusChange == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK) {
+                        // Lost audio focus, pause the audio file and change to the beggining
+                        mp.pause();
+                        mp.seekTo(0);
+                    } else if (focusChange == AUDIOFOCUS_LOSS_TRANSIENT) {
+                        // Pause playback
+                    } else if (focusChange == AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK) {
+                        // Lower the volume, keep playing
+                    } else if (focusChange == AudioManager.AUDIOFOCUS_GAIN) {
+                        // Your app has been granted audio focus again
+                        // Raise volume to normal, restart playback if necessary
+                        mp.release();
+                    }
+                }
+            };
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +55,9 @@ public class NumberActivity extends AppCompatActivity {
 
         // Create ArrayList of words
         final ArrayList<Word> wordList = new ArrayList<Word>();
+
+        // Get System Service
+        am = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
         // Adding words into the adaptar
         wordList.add(new Word("One", "Một", R.drawable.number_one, R.raw.one));
@@ -58,18 +87,32 @@ public class NumberActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Word currentWordItem = wordList.get(position);
 
-                mp = MediaPlayer.create(NumberActivity.this, currentWordItem.getSoundId());
-                mp.start();
+                // Request audio focus for playback
+                int result = am.requestAudioFocus(amChangeListener,
+                        // Use the music stream.
+                        AudioManager.STREAM_MUSIC,
+                        // Request permanent focus.
+                        AudioManager.AUDIOFOCUS_GAIN_TRANSIENT);
+
+                if (result == AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
+                    // Start when we have audio focus
+                    mp = MediaPlayer.create(NumberActivity.this, currentWordItem.getSoundId());
+                    mp.start();
+
+                }
 
                 // Release the resource after the audio is done playing
                 mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                     @Override
                     public void onCompletion(MediaPlayer mp) {
                         mp.release();
+                        am.abandonAudioFocus(amChangeListener);
                     }
                 });
             }
         });
+
+
 
     }// end onCreate
 
@@ -83,8 +126,13 @@ public class NumberActivity extends AppCompatActivity {
             @Override
             public void onCompletion(MediaPlayer mp) {
                 mp.release();
+                am.abandonAudioFocus(amChangeListener);
             }
         });
     }// end onStop
+
+
+
+
 
 }// end activity
