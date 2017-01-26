@@ -60,16 +60,16 @@ public class NumberActivity extends AppCompatActivity {
         am = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
         // Adding words into the adaptar
-        wordList.add(new Word("One", "Một", R.drawable.number_one, R.raw.one));
-        wordList.add(new Word("Two", "Hai", R.drawable.number_two, R.raw.two));
-        wordList.add(new Word("Three", "Ba", R.drawable.number_three, R.raw.three));
-        wordList.add(new Word("Four", "Bốn", R.drawable.number_four, R.raw.four));
-        wordList.add(new Word("Five", "Năm", R.drawable.number_five, R.raw.five));
-        wordList.add(new Word("Six", "Sáu", R.drawable.number_six, R.raw.six));
-        wordList.add(new Word("Seven", "Bảy", R.drawable.number_seven, R.raw.seven));
-        wordList.add(new Word("Eight", "Tám", R.drawable.number_eight, R.raw.eight));
-        wordList.add(new Word("Nine", "Chín", R.drawable.number_nine, R.raw.nine));
-        wordList.add(new Word("Ten", "Mười", R.drawable.number_ten, R.raw.ten));
+        wordList.add(new Word("One", "Một", R.drawable.number_one, R.raw.one, R.drawable.ic_play_arrow_black_24dp));
+        wordList.add(new Word("Two", "Hai", R.drawable.number_two, R.raw.two, R.drawable.ic_play_arrow_black_24dp));
+        wordList.add(new Word("Three", "Ba", R.drawable.number_three, R.raw.three, R.drawable.ic_play_arrow_black_24dp));
+        wordList.add(new Word("Four", "Bốn", R.drawable.number_four, R.raw.four, R.drawable.ic_play_arrow_black_24dp));
+        wordList.add(new Word("Five", "Năm", R.drawable.number_five, R.raw.five, R.drawable.ic_play_arrow_black_24dp));
+        wordList.add(new Word("Six", "Sáu", R.drawable.number_six, R.raw.six, R.drawable.ic_play_arrow_black_24dp));
+        wordList.add(new Word("Seven", "Bảy", R.drawable.number_seven, R.raw.seven, R.drawable.ic_play_arrow_black_24dp));
+        wordList.add(new Word("Eight", "Tám", R.drawable.number_eight, R.raw.eight, R.drawable.ic_play_arrow_black_24dp));
+        wordList.add(new Word("Nine", "Chín", R.drawable.number_nine, R.raw.nine, R.drawable.ic_play_arrow_black_24dp));
+        wordList.add(new Word("Ten", "Mười", R.drawable.number_ten, R.raw.ten, R.drawable.ic_play_arrow_black_24dp));
 
 
         // Create Array Adapter for List
@@ -120,15 +120,16 @@ public class NumberActivity extends AppCompatActivity {
     protected void onStop() {
         super.onStop();
 
-        // Stop audio playback and release to free memory
+
+/*        // Stop audio playback and release to free memory
         mp.stop();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {
                 mp.release();
                 am.abandonAudioFocus(amChangeListener);
-            }
-        });
+        }
+        });*/
     }// end onStop
 
 

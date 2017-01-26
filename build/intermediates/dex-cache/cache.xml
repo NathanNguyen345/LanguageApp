@@ -43,7 +43,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="9014ff4e10052a74196285c7193c3be528e7da51">
+        sha1="a57d2577b19641633005d1ad8c11f8e2e54e5d66">
         <dex dex="/Users/nathan.nguyen/Desktop/Github/LanguageApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_7cd3ae86f86669242189af7f32dba5328d87d366/classes.dex" />
     </item>
     <item
@@ -151,7 +151,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="f93d201ef24a78431170abe2771abd85aed85d76">
+        sha1="7c9fc3ee7947768264c4cd99189f87d18d0ac02b">
         <dex dex="/Users/nathan.nguyen/Desktop/Github/LanguageApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_0465600f67fe02a109fde8b1f20afff932643501/classes.dex" />
     </item>
     <item

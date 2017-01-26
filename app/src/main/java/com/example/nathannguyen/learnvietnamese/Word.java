@@ -13,6 +13,7 @@ public class Word  {
     private String vietWord;
     private int imageId = -1;
     private int soundId = -1;
+    private int playIcon = -1;
 
 
     // Constructor w/o img
@@ -35,12 +36,21 @@ public class Word  {
         this.imageId = source;
     }
 
-    // Constructor w/ img
+    // Constructor w/ img & sound
     public Word(String eng, String viet, int source, int sound){
         this.engWord = eng;
         this.vietWord = viet;
         this.imageId = source;
         this.soundId = sound;
+    }
+
+    // Constructor w/ play button
+    public Word(String eng, String viet, int source, int sound, int play){
+        this.engWord = eng;
+        this.vietWord = viet;
+        this.imageId = source;
+        this.soundId = sound;
+        this.playIcon = play;
     }
 
     /**
@@ -64,5 +74,10 @@ public class Word  {
 
     public int getSoundId() {
         return soundId;
+    }
+
+    public int getPlayIcon() {
+        return playIcon;
+
     }
 }// end Word class

@@ -18,9 +18,10 @@
             android:layout_height="88dp"/>
 
         <LinearLayout
+            android:layout_weight="1"
             android:id="@+id/playId"
             android:orientation="vertical"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="88dp">
 
             <TextView
@@ -43,7 +44,11 @@
                 tools:text="mot"/>
         </LinearLayout>
 
-    </LinearLayout>
+        <ImageView
+            android:id="@+id/playIcon"
+            android:layout_width="88dp"
+            android:layout_height="88dp" />
 
+    </LinearLayout>
 
 </LinearLayout>

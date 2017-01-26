@@ -74,14 +74,18 @@ public class FamilyActivity extends AppCompatActivity {
     protected void onStop() {
         super.onStop();
 
-        // Stop audio playback and release to free memory
-        mp.stop();
+
+        // This section has a bug
+
+/*        mp.stop();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {
                 mp.release();
             }
-        });
+        });*/
+
+
     }// end onStop
 
 }// end activty

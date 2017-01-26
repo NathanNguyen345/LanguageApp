@@ -73,6 +73,16 @@ public class WordAdapter<W> extends ArrayAdapter<Word> {
         int color = ContextCompat.getColor(getContext(), colorID);
         currentImage.setBackgroundColor(color);
 
+        ImageView playIcon = (ImageView) myView.findViewById(R.id.playIcon);
+        if(currentWordView.hasImage()){
+            playIcon.setImageResource(currentWordView.getPlayIcon());
+            playIcon.setVisibility(View.VISIBLE);
+
+        }
+        else {
+            playIcon.setVisibility(View.GONE);
+        }
+
         return myView;
     }
 }
