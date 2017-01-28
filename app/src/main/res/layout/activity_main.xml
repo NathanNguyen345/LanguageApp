@@ -13,33 +13,62 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/number"
-            style="@style/itemMenu"
-            android:background="#81C784"
-            android:text="Numbers"
-            android:onClick="menuList"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/numColor">
+            <TextView
 
-        <TextView
-            android:id="@+id/family"
-            style="@style/itemMenu"
-            android:background="#4DB6AC"
-            android:text="Family Memebers"
-            android:onClick="menuList"/>
+                android:id="@+id/number"
+                style="@style/itemMenu"
+                android:background="?attr/selectableItemBackground"
+                android:text="Numbers"
+                android:onClick="menuList"/>
 
-        <TextView
-            android:id="@+id/color"
-            style="@style/itemMenu"
-            android:background="#4DD0E1"
-            android:text="Colors"
-            android:onClick="menuList"/>
+        </FrameLayout>
 
-        <TextView
-            android:id="@+id/phrase"
-            style="@style/itemMenu"
-            android:background="#4FC3F7"
-            android:text="Phrases"
-            android:onClick="menuList"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/famColor">
+
+            <TextView
+                android:id="@+id/family"
+                style="@style/itemMenu"
+                android:background="?attr/selectableItemBackground"
+                android:text="Family Memebers"
+                android:onClick="menuList"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorColor">
+
+            <TextView
+                android:id="@+id/color"
+                style="@style/itemMenu"
+                android:background="?attr/selectableItemBackground"
+                android:text="Colors"
+                android:onClick="menuList"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4FC3F7">
+
+            <TextView
+                android:id="@+id/phrase"
+                style="@style/itemMenu"
+                android:background="?attr/selectableItemBackground"
+                android:text="Phrases"
+                android:onClick="menuList"/>
+
+        </FrameLayout>
+
 
     </LinearLayout>
 

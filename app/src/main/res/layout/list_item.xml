@@ -9,7 +9,7 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:weightSum="1">
 
         <ImageView
@@ -45,9 +45,11 @@
         </LinearLayout>
 
         <ImageView
+            android:layout_marginRight="16dp"
+            android:layout_gravity="center"
             android:id="@+id/playIcon"
-            android:layout_width="88dp"
-            android:layout_height="88dp" />
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
 
     </LinearLayout>
 

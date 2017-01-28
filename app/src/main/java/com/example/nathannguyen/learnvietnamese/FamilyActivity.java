@@ -30,16 +30,16 @@ public class FamilyActivity extends AppCompatActivity {
         final ArrayList<Word> familyList = new ArrayList<Word>();
 
         // Add elements to the arrayList
-        familyList.add(new Word("Grandfather", "Ông", R.drawable.family_grandfather, R.raw.gradpa));
-        familyList.add(new Word("GrandMother", "Bà", R.drawable.family_grandmother, R.raw.grandma));
-        familyList.add(new Word("Father", "Ba", R.drawable.family_father, R.raw.father));
-        familyList.add(new Word("Mother", "Mẹ", R.drawable.family_mother, R.raw.mother));
-        familyList.add(new Word("Brother", "Anh trai", R.drawable.family_son, R.raw.brother));
-        familyList.add(new Word("Sister", "Chị gái", R.drawable.family_daughter, R.raw.sister));
-        familyList.add(new Word("Husband", "Chồng", R.drawable.family_older_brother, R.raw.husband));
-        familyList.add(new Word("Wife", "Vợ", R.drawable.family_older_sister, R.raw.wife));
-        familyList.add(new Word("Daughter", "Con Gái", R.drawable.family_younger_sister, R.raw.daughter));
-        familyList.add(new Word("Son", "Con Trai", R.drawable.family_younger_brother, R.raw.son));
+        familyList.add(new Word("Grandfather", "Ông", R.drawable.family_grandfather, R.raw.gradpa, R.drawable.ic_play_arrow_black_24dp));
+        familyList.add(new Word("GrandMother", "Bà", R.drawable.family_grandmother, R.raw.grandma, R.drawable.ic_play_arrow_black_24dp));
+        familyList.add(new Word("Father", "Ba", R.drawable.family_father, R.raw.father, R.drawable.ic_play_arrow_black_24dp));
+        familyList.add(new Word("Mother", "Mẹ", R.drawable.family_mother, R.raw.mother, R.drawable.ic_play_arrow_black_24dp));
+        familyList.add(new Word("Brother", "Anh trai", R.drawable.family_son, R.raw.brother, R.drawable.ic_play_arrow_black_24dp));
+        familyList.add(new Word("Sister", "Chị gái", R.drawable.family_daughter, R.raw.sister, R.drawable.ic_play_arrow_black_24dp));
+        familyList.add(new Word("Husband", "Chồng", R.drawable.family_older_brother, R.raw.husband, R.drawable.ic_play_arrow_black_24dp));
+        familyList.add(new Word("Wife", "Vợ", R.drawable.family_older_sister, R.raw.wife, R.drawable.ic_play_arrow_black_24dp));
+        familyList.add(new Word("Daughter", "Con Gái", R.drawable.family_younger_sister, R.raw.daughter, R.drawable.ic_play_arrow_black_24dp));
+        familyList.add(new Word("Son", "Con Trai", R.drawable.family_younger_brother, R.raw.son, R.drawable.ic_play_arrow_black_24dp));
 
         // Create the word adapter
         WordAdapter<Word> familyAdapter = new WordAdapter<Word>(this, familyList, R.color.famColor);
@@ -74,18 +74,6 @@ public class FamilyActivity extends AppCompatActivity {
     protected void onStop() {
         super.onStop();
 
-
-        // This section has a bug
-
-/*        mp.stop();
-        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mp) {
-                mp.release();
-            }
-        });*/
-
-
-    }// end onStop
-
+//        mp.stop();
+    }
 }// end activty

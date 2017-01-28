@@ -12,8 +12,8 @@ public class Word  {
     private String engWord;
     private String vietWord;
     private int imageId = -1;
-    private int soundId = -1;
-    private int playIcon = -1;
+    private int soundId;
+    private int playIcon;
 
 
     // Constructor w/o img
@@ -23,10 +23,11 @@ public class Word  {
     }
 
     // Constructor w/o img
-    public Word(String eng, String viet, int sound, boolean image){
+    public Word(String eng, String viet, int sound, boolean image, int play){
         this.engWord = eng;
         this.vietWord = viet;
         this.soundId = sound;
+        this.playIcon = play;
     }
 
     // Constructor w/ img

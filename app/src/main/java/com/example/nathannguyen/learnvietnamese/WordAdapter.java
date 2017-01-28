@@ -73,6 +73,7 @@ public class WordAdapter<W> extends ArrayAdapter<Word> {
         int color = ContextCompat.getColor(getContext(), colorID);
         currentImage.setBackgroundColor(color);
 
+        // get play buttom icon
         ImageView playIcon = (ImageView) myView.findViewById(R.id.playIcon);
         if(currentWordView.hasImage()){
             playIcon.setImageResource(currentWordView.getPlayIcon());

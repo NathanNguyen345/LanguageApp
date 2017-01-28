@@ -116,24 +116,5 @@ public class NumberActivity extends AppCompatActivity {
 
     }// end onCreate
 
-    @Override
-    protected void onStop() {
-        super.onStop();
-
-
-/*        // Stop audio playback and release to free memory
-        mp.stop();
-        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mp) {
-                mp.release();
-                am.abandonAudioFocus(amChangeListener);
-        }
-        });*/
-    }// end onStop
-
-
-
-
 
 }// end activity

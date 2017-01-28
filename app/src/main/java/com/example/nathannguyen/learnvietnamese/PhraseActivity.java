@@ -30,14 +30,14 @@ public class PhraseActivity extends AppCompatActivity {
         final ArrayList<Word> phraseList = new ArrayList<Word>();
 
         // Adding words into the adaptar
-        phraseList.add(new Word("Hello", "Chào anh", R.raw.hello, false));
-        phraseList.add(new Word("How are you?", "Chị khỏe không?", R.raw.howareyou, false));
-        phraseList.add(new Word("I'm fine, thank you", "Tôi khỏe, cảm ơn", R.raw.imfine, false));
-        phraseList.add(new Word("Nice to meet you", "Hân hạnh được biết chị", R.raw.niceto, false));
-        phraseList.add(new Word("Goodbye", "Tạm biệt", R.raw.goodbye, false));
-        phraseList.add(new Word("Do you speak English?", "Anh có nói tiếng Anh không?", R.raw.english, false));
-        phraseList.add(new Word("Yes, I speak English.", "Có, tôi nói tiếng Anh.", R.raw.yesenglish, false));
-        phraseList.add(new Word("No, I don't speak English.", "Không, tôi không nói tiếng Anh.", R.raw.noenglish, false));
+        phraseList.add(new Word("Hello", "Chào anh", R.raw.hello, false, R.drawable.ic_play_arrow_black_24dp));
+        phraseList.add(new Word("How are you?", "Chị khỏe không?", R.raw.howareyou, false, R.drawable.ic_play_arrow_black_24dp));
+        phraseList.add(new Word("I'm fine, thank you", "Tôi khỏe, cảm ơn", R.raw.imfine, false, R.drawable.ic_play_arrow_black_24dp));
+        phraseList.add(new Word("Nice to meet you", "Hân hạnh được biết chị", R.raw.niceto, false, R.drawable.ic_play_arrow_black_24dp));
+        phraseList.add(new Word("Goodbye", "Tạm biệt", R.raw.goodbye, false, R.drawable.ic_play_arrow_black_24dp));
+        phraseList.add(new Word("Do you speak English?", "Anh có nói tiếng Anh không?", R.raw.english, false, R.drawable.ic_play_arrow_black_24dp));
+        phraseList.add(new Word("Yes, I speak English.", "Có, tôi nói tiếng Anh.", R.raw.yesenglish, false, R.drawable.ic_play_arrow_black_24dp));
+        phraseList.add(new Word("No, I don't speak English.", "Không, tôi không nói tiếng Anh.", R.raw.noenglish, false, R.drawable.ic_play_arrow_black_24dp));
 
 
         // Create Array Adapter for List
@@ -71,18 +71,5 @@ public class PhraseActivity extends AppCompatActivity {
     }// end onCreate
 
 
-    @Override
-    protected void onStop() {
-        super.onStop();
-
-        // Stop audio playback and release to free memory
-        mp.stop();
-        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mp) {
-                mp.release();
-            }
-        });
-    }// end onStop
 
 }// end activity
