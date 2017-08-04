@@ -12,15 +12,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/nathan.nguyen/Desktop/Code/Android/LanguageApp/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="9b23744d6d7f2a6a51fca8b8f7a7d3fa9e858071">
-        <dex dex="/Users/nathan.nguyen/Desktop/Code/Android/LanguageApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_e9d4eeb8cf27ed4d4b595db1770f8b124b65b61b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/nathan.nguyen/Desktop/Github/LanguageApp/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -30,57 +21,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/nathan.nguyen/Desktop/Code/Android/LanguageApp/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
-        <dex dex="/Users/nathan.nguyen/Desktop/Code/Android/LanguageApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.1.0_acc7dd4c5669adf8cd396fd8eac895f7b21e5abc/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/nathan.nguyen/Desktop/Github/LanguageApp/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="bd23a63d1dace919bb023a2f2d434c50fa72c498">
+        sha1="3069d0a80e3e3d0dbbfaa9600a4cf6e9e8241e86">
         <dex dex="/Users/nathan.nguyen/Desktop/Github/LanguageApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_7cd3ae86f86669242189af7f32dba5328d87d366/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/nathan.nguyen/Desktop/Code/Android/LanguageApp/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
-        <dex dex="/Users/nathan.nguyen/Desktop/Code/Android/LanguageApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.1.0_56d94068b3e4a5a9f991a04a4256550bca767497/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/nathan.nguyen/Desktop/Code/Android/LanguageApp/app/build/intermediates/exploded-aar/com.android.support/transition/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d38084015027549951cbaea5d5f6fb795cc81151">
-        <dex dex="/Users/nathan.nguyen/Desktop/Code/Android/LanguageApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-transition-25.1.0_15b2431b51b902cf6e834795c2dbac6de382f60a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/nathan.nguyen/Desktop/Code/Android/LanguageApp/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
-        <dex dex="/Users/nathan.nguyen/Desktop/Code/Android/LanguageApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.1.0_e69eae714ac782808c2e1f4982ebb9cd4a387d54/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/nathan.nguyen/Desktop/Code/Android/LanguageApp/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
-        <dex dex="/Users/nathan.nguyen/Desktop/Code/Android/LanguageApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.1.0_e8d4c1436e994df2ef1b2856e60e6c5b6c61b8ec/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -99,24 +45,6 @@
         revision="25.0.2"
         sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
         <dex dex="/Users/nathan.nguyen/Desktop/Code/Android/LanguageApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.1.0_2610c5fed363aa6ba9e9f871b99a3055cc79c382/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/nathan.nguyen/Desktop/Code/Android/LanguageApp/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
-        <dex dex="/Users/nathan.nguyen/Desktop/Code/Android/LanguageApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.1.0_0400025a9f565c1095a89acd6b88d5286c2eae97/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/nathan.nguyen/Desktop/Code/Android/LanguageApp/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
-        <dex dex="/Users/nathan.nguyen/Desktop/Code/Android/LanguageApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.1.0_2d20154fbdfe09f12ea6992353757e9efc24c779/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -151,7 +79,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="1808abf81cb49bd4556b56a78682537187fc3da7">
+        sha1="205119b71b4be17fd891c7359715eec3342271e1">
         <dex dex="/Users/nathan.nguyen/Desktop/Github/LanguageApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_0465600f67fe02a109fde8b1f20afff932643501/classes.dex" />
     </item>
     <item
@@ -171,24 +99,6 @@
         revision="25.0.2"
         sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
         <dex dex="/Users/nathan.nguyen/Desktop/Github/LanguageApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.1.0_8291aaa61299c11d4f8c22b36acc22ebad510e08/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/nathan.nguyen/Desktop/Code/Android/LanguageApp/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/nathan.nguyen/Desktop/Code/Android/LanguageApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.1.0_74c73ef02abef0a1aaf187b8500da1f71b3bb6b8/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/nathan.nguyen/Desktop/Code/Android/LanguageApp/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="aee64634871d88a419d59eb743c1258a60f19700">
-        <dex dex="/Users/nathan.nguyen/Desktop/Code/Android/LanguageApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.1.0_6167ec5e10b2bd810f0962609db97650c8c1ac07/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -219,48 +129,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/nathan.nguyen/Desktop/Code/Android/LanguageApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
-        <dex dex="/Users/nathan.nguyen/Desktop/Code/Android/LanguageApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.1.0_f2040088e4c3af6bdba474299f81e9f275f1f1b8/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/nathan.nguyen/Desktop/Code/Android/LanguageApp/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8489c9ddcf1687fb4358794b427eccbfdb2ce0fd">
-        <dex dex="/Users/nathan.nguyen/Desktop/Code/Android/LanguageApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_bb93692bf1bf763ccb7f4d5ed4c6c86299e1f40a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/nathan.nguyen/Desktop/Code/Android/LanguageApp/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
-        <dex dex="/Users/nathan.nguyen/Desktop/Code/Android/LanguageApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.1.0_3017bb119f0981fbff7b2bae437b87c99d538925/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/nathan.nguyen/Desktop/Github/LanguageApp/app/build/intermediates/exploded-aar/com.android.support/transition/25.1.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="d38084015027549951cbaea5d5f6fb795cc81151">
         <dex dex="/Users/nathan.nguyen/Desktop/Github/LanguageApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-transition-25.1.0_9ec87ce367a9a4a6746cecb07d14d500daa7fed3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/nathan.nguyen/Desktop/Code/Android/LanguageApp/app/build/intermediates/exploded-aar/com.android.support/design/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="30103d98fa5ed824b54af839c85e2111f9bde8ec">
-        <dex dex="/Users/nathan.nguyen/Desktop/Code/Android/LanguageApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-25.1.0_19b44e6eaf84242cbed4ec4f1ed979afed67c934/classes.dex" />
     </item>
 
 </items>
